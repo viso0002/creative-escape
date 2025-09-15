@@ -1,0 +1,45 @@
+---
+const { title, address, description, tip, image } = Astro.props;
+---
+
+<div class="place-card">
+  <div class="place-content">
+    <h2>{title}</h2>
+    <p class="address">📍 {address}</p>
+    <p>{description}</p>
+    <p class="tip">📌 <strong>Our tip:</strong> {tip}</p>
+  </div>
+  <img src={image} alt={title} class="place-image" />
+</div>
+
+<style>
+  .place-card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: #edece7;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .place-image {
+    width: 40%;
+    max-height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .place-content {
+    flex: 2;
+  }
+
+  .address {
+    font-weight: bold;
+  }
+
+  .tip {
+    color: #444;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+</style>

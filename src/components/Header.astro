@@ -1,21 +1,131 @@
-<header>
-  <nav>
-    <ul>
-      <li><a href="/">ABOUT</a></li>
-      <li><a href="/">EXPLORE</a></li>
-      <li><a href="/">CONTACT</a></li>
-    </ul>
-  </nav>
+<header class="header">
+  <div class="container">
+    <a href="/" class="logo">
+      <img src="/logo.png" alt="CRTV ESC Logo" />
+    </a>
+
+    <nav class="nav">
+      <a href="/about">ABOUT</a>
+      <a href="/explore">EXPLORE</a>
+      <a href="/contact">CONTACT</a>
+    </nav>
+
+    <button class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="mobile-nav">
+      <a href="/about">ABOUT</a>
+      <a href="/explore">EXPLORE</a>
+      <a href="/contact">CONTACT</a>
+    </nav>
+  </div>
 </header>
 
-<style>
-  nav {
-    background-color: #2f2f2f;
+<script>
+  const burger = document.querySelector('.burger');
+  if (burger) {
+    burger.addEventListener('click', function(e) {
+      if (e.currentTarget) {
+        (e.currentTarget as HTMLElement).classList.toggle('active'); }
+      const mobileNav = document.querySelector('.mobile-nav');
+      if (mobileNav) {
+        mobileNav.classList.toggle('active');
+      }
+    });
   }
-  li,
-  a {
+</script>
+
+<style>
+  .header {
+    background: #4a4a4a;
+    color: white;
+    position: relative;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: white;
+  }
+
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+
+  .nav {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav a, .mobile-nav a {
     color: white;
     text-decoration: none;
-    list-style: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+  }
+
+  .nav a:hover, .mobile-nav a:hover {
+    color: #c17c5b;
+  }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+
+  .burger.active span:nth-child(1) { transform: rotate(-45deg) translate(-5px, 6px); }
+  .burger.active span:nth-child(2) { opacity: 0; }
+  .burger.active span:nth-child(3) { transform: rotate(45deg) translate(-5px, -6px); }
+
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #4a4a4a;
+    border-top: 1px solid #666;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+  }
+
+  .mobile-nav a {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  @media (max-width: 768px) {
+    .nav { display: none; }
+    .burger { display: flex; }
   }
 </style>

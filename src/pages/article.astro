@@ -9,39 +9,69 @@ import grod from "../assets/IMG_0440.jpeg";
 ---
 
 <Layout>
-  <h1>CHEAP, TASTY AND LOCAL: <br /> 5 PLACES TO EAT IN COPENHAGEN</h1>
-  <p>
-    Eating well in Copenhagen doesn't have to be expensive. Here are five restaurants where atmosphere and flavor go
-    hand in hand with student-friendly prices - plus our tips on how to get the most out of the experience.
-  </p>
+  <div class="article-page">
+    <div class="container">
+      <h1>CHEAP, TASTY AND LOCAL: <br /> 5 PLACES TO EAT IN COPENHAGEN</h1>
+       <img src="/public/images/article1.jpg" alt="Copenhagen dining" />
+      <p>
+        Eating well in Copenhagen doesn't have to be expensive. Here are five restaurants where atmosphere and flavor go
+        hand in hand with student-friendly prices - plus our tips on how to get the most out of the experience.
+      </p>
 
-  <h2>GOOD VIBES, GOOD BITES, LOW PRICE.</h2>
-  <ArticleGrid1
-    title="1. District Tonkin - Vietnamese streetfood vibes"
-    address="Dronningens Tværgade"
-    description="Fresh noodles, bánh mì and authentic vibes. Prices from 75 DKK. Perfect for a quick, flavorful dinner full of color and energy."
-    tip=" Try their iced coffee with condensed milk - a quick energy boost for your study break."
-    image={district.src}
-  />
-  <ArticleGrid2
-    title="2. Grød - Nordic minimalism in a bowl"
-    address="Nørrebro, Østerbro & Vesterbro"
-    description="A true classic for creative students. From morning porridge to risotto in the evening. Beautifully served, affordable and cozy. Dishes from 65 DKK."
-    tip="Go in the evening and order the risotto - a hidden favorite many overlook."
-    image={grod.src}
-  />
-  <ArticleGrid1
-    title="3. Gasoline Grill"
-    address="Multiple locations"
-    description="An internationally recognized burger spot. Simple yet iconic burgers for around 85 DKK. A place most young locals know and love."
-    tip="Grab your burger to-go and head to Kongens Have (5 min. walk) - the perfect hangout spot with friends."
-    image={gasoline.src}
-  />
-  <ArticleGrid1
-    title="5. Torvehallerne"
-    address="Nørreport"
-    description="Et af byens mest kendte madmarkeder. Masser af små boder med alt fra smørrebrød til tacos - priser starter fra ca. 60 kr. Perfekt til at dele med en ven."
-    tip="Gå efter Hija de Sanchez for byens bedste tacos - og del flere småretter i stedet for én stor."
-    image={torvehallerne.src}
-  />
+      <h2>GOOD VIBES, GOOD BITES, LOW PRICE.</h2>
+      <ArticleGrid1
+        title="1. District Tonkin - Vietnamese streetfood vibes"
+        address="Dronningens Tværgade"
+        description="Fresh noodles, bánh mì and authentic vibes. Prices from 75 DKK. Perfect for a quick, flavorful dinner full of color and energy."
+        tip=" Try their iced coffee with condensed milk - a quick energy boost for your study break."
+        image={district.src}
+      />
+      <ArticleGrid2
+        title="2. Grød - Nordic minimalism in a bowl"
+        address="Nørrebro, Østerbro & Vesterbro"
+        description="A true classic for creative students. From morning porridge to risotto in the evening. Beautifully served, affordable and cozy. Dishes from 65 DKK."
+        tip="Go in the evening and order the risotto - a hidden favorite many overlook."
+        image={grod.src}
+      />
+      <ArticleGrid1
+        title="3. Gasoline Grill"
+        address="Multiple locations"
+        description="An internationally recognized burger spot. Simple yet iconic burgers for around 85 DKK. A place most young locals know and love."
+        tip="Grab your burger to-go and head to Kongens Have (5 min. walk) - the perfect hangout spot with friends."
+        image={gasoline.src}
+      />
+      <ArticleGrid2
+        title="4. Torvehallerne"
+        address="Nørreport"
+        description="Et af byens mest kendte madmarkeder. Masser af små boder med alt fra smørrebrød til tacos - priser starter fra ca. 60 kr. Perfekt til at dele med en ven."
+        tip="Gå efter Hija de Sanchez for byens bedste tacos - og del flere småretter i stedet for én stor."
+        image={torvehallerne.src}
+      />
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .article-page {
+    background: #f5f5f5;
+    padding: 40px 0;
+  }
+  .article-page h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .article-page img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+</style>

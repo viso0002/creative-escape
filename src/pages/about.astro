@@ -1,3 +1,36 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 ---
+
+<Layout>
+  <section>
+    <header>
+      <h1>WHAT IS CREATIVE ESCAPE?</h1>
+    </header>
+    <p>
+      Creative Escape is a modern platform developed by students with a background in design and communication.
+      <br /> We focus on young creatives who want to discover travel inspiration in a quick and visual way. The project was born out of our own experience that many existing solutions are too long, too touristy, and not always relevant to students needs.
+      <br />
+      The goal of Creative Escape is to create a universe where aesthetics and authenticity meet. We work with short guides, images, and prototypes that make it easy to save and share experiences. In this way, users can both save time and find places
+      that better fit their identity and creative work.
+    </p>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  html,
+  body {
+    background-color: #edece7;
+  }
+  header,
+  p {
+    margin: auto;
+    text-align: center;
+    max-width: 400px;
+    padding: 5rem;
+  }
+</style>

@@ -7,11 +7,13 @@
 
     <div class="articles">
       <article class="article">
-        <img src="/public/images/article1.jpg" alt="Copenhagen dining" />
-        <div class="content">
-          <span class="location">COPENHAGEN</span>
-          <h3>CHEAP, TASTY & LOCAL: 5 PLACES TO EAT IN COPENHAGEN</h3>
-        </div>
+        <a href="/article">
+          <img src="/public/images/article1.jpg" alt="Copenhagen dining" />
+          <div class="content">
+            <span class="location">COPENHAGEN</span>
+            <h3>CHEAP, TASTY & LOCAL: 5 PLACES TO EAT IN COPENHAGEN</h3>
+          </div>
+        </a>
       </article>
 
       <article class="article">
@@ -63,6 +65,11 @@
     font-weight: bold;
     margin: 0;
     letter-spacing: 1px;
+  }
+
+  .article a {
+    text-decoration: none;
+    color: inherit;
   }
 
   .articles {

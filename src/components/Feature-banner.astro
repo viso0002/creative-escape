@@ -1,0 +1,126 @@
+<section class="featured">
+  <div class="container">
+    <div class="header">
+      <span class="tag">FEATURED ARTICLES</span>
+      <h2>DELICIOUS DINING FOR LESS</h2>
+    </div>
+
+    <div class="articles">
+      <article class="article">
+        <img src="/public/images/article1.jpg" alt="Copenhagen dining" />
+        <div class="content">
+          <span class="location">COPENHAGEN</span>
+          <h3>CHEAP, TASTY & LOCAL: 5 PLACES TO EAT IN COPENHAGEN</h3>
+        </div>
+      </article>
+
+      <article class="article">
+        <img src="/public/images/article2.jpg" alt="Barcelona breakfast" />
+        <div class="content">
+          <span class="location">BARCELONA</span>
+          <h3>AFFORDABLE MORNING BITES IN BARCELONA</h3>
+        </div>
+      </article>
+
+      <article class="article">
+        <img src="/public/images/article3.jpg" alt="Rome dining" />
+        <div class="content">
+          <span class="location">ROME</span>
+          <h3>FROM PASTA TO PINOT: CHEAP BUT CHIC EATS IN ROME</h3>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+  .featured {
+    background: #4a4a4a;
+    color: white;
+    padding: 60px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .tag {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ccc;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+
+  .article {
+    background: #5a5a5a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .article:hover {
+    transform: translateY(-5px);
+  }
+
+  .article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .location {
+    font-size: 11px;
+    color: #c17c5b;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 768px) {
+    .featured {
+      padding: 40px 0;
+    }
+
+    .header h2 {
+      font-size: 28px;
+    }
+
+    .articles {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+</style>

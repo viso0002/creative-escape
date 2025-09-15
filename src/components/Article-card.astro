@@ -1,0 +1,243 @@
+<article class="article-page">
+  <div class="container">
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <!-- Hero Article -->
+      <section class="hero-article">
+        <img src="/public/images/article4.jpg" alt="Berlin architecture" class="hero-image" />
+        <div class="hero-text">
+          <h1>BERLIN FOR THE YOUNG & RESTLESS: YOUR ANTI-TOURIST GUIDE</h1>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="news-section">
+          <span class="news-tag">NEWS</span>
+          <h3>SENESTE NYT</h3>
+          
+          <div class="news-item">
+            <img src="/public/images/article5.jpg" alt="Cocktail" />
+            <div class="news-content">
+              <p>Exploring new cities means new flavors — here's where to enjoy your next cocktail on your travels.</p>
+              <span class="date">2016-2020</span>
+            </div>
+          </div>
+
+          <div class="news-item">
+            <img src="/public/images/article6.jpg" alt="Boat travel" />
+            <div class="news-content">
+              <p>Sail into unforgettable memories with a boat tour you'll never forget.</p>
+              <span class="date">2016-2020</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Featured Articles Section -->
+    <section class="featured-section">
+      <span class="featured-tag">FEATURED ARTICLES</span>
+      <h2>5 FREE EXHIBITIONS TO EXPLORE IN MILAN</h2>
+      
+      <div class="featured-content">
+        <img src="/public/images/article7.jpg" alt="Milan Duomo" class="featured-image" />
+        <div class="featured-text">
+          <p>Milan Is A City Where Tradition And Modern Style Meet In Perfect Harmony. From The Historic Elegance Of The Duomo And The Cobbled Streets Of Brera To Sleek Fashion Districts, Buzzing Cafés, And Cutting-Edge Galleries, Italy's Design Capital Has Something For Every Traveler. Stroll Through Vibrant Neighborhoods, Relax In Leafy Courtyards, Or Immerse Yourself In The City's Thriving Cultural And Fashion Scene – In Milan, Every Corner Reflects A Blend Of History And Creativity.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</article>
+
+<style>
+  .article-page {
+    background: #f5f5f5;
+    padding: 40px 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  /* Hero Article */
+  .hero-article {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 40px 30px 30px;
+    color: white;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    height: fit-content;
+  }
+
+  .news-tag {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #999;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .sidebar h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    color: #333;
+  }
+
+  .news-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .news-item img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+  }
+
+  .news-content p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    color: #333;
+  }
+
+  .date {
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.5px;
+  }
+
+  /* Featured Section */
+  .featured-section {
+    border-top: 1px solid #ddd;
+    padding-top: 40px;
+  }
+
+  .featured-tag {
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #999;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .featured-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .featured-content {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 30px;
+    align-items: start;
+  }
+
+  .featured-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .featured-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .hero-text h1 {
+      font-size: 24px;
+    }
+
+    .featured-content {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .featured-image {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-article {
+      height: 300px;
+    }
+
+    .hero-text {
+      padding: 20px 20px 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 20px;
+    }
+
+    .sidebar {
+      padding: 20px;
+    }
+  }
+</style>

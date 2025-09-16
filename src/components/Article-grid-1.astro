@@ -43,4 +43,15 @@ const { title, address, description, tip, image } = Astro.props;
     margin-top: 0.5rem;
     font-style: italic;
   }
+
+  @font-face {
+    font-family: "fira-sans";
+    src: url("/src/fonts/FiraSans-Regular.ttf");
+  }
+
+  h2,
+  p {
+    font-family: fira-sans;
+    color: #2f2f2f;
+  }
 </style>

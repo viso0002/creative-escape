@@ -15,7 +15,7 @@
         <div class="news-section">
           <span class="news-tag">NEWS</span>
           <h3>LATEST</h3>
-          
+
           <div class="news-item">
             <img src="/public/images/article5.jpg" alt="Cocktail" />
             <div class="news-content">
@@ -39,11 +39,17 @@
     <section class="featured-section">
       <span class="featured-tag">FEATURED ARTICLES</span>
       <h2>5 FREE EXHIBITIONS TO EXPLORE IN MILAN</h2>
-      
+
       <div class="featured-content">
         <img src="/public/images/article7.jpg" alt="Milan Duomo" class="featured-image" />
         <div class="featured-text">
-          <p>Milan Is A City Where Tradition And Modern Style Meet In Perfect Harmony. From The Historic Elegance Of The Duomo And The Cobbled Streets Of Brera To Sleek Fashion Districts, Buzzing Cafés, And Cutting-Edge Galleries, Italy's Design Capital Has Something For Every Traveler. Stroll Through Vibrant Neighborhoods, Relax In Leafy Courtyards, Or Immerse Yourself In The City's Thriving Cultural And Fashion Scene – In Milan, Every Corner Reflects A Blend Of History And Creativity.</p>
+          <p>
+            Milan Is A City Where Tradition And Modern Style Meet In Perfect Harmony. From The Historic Elegance Of The
+            Duomo And The Cobbled Streets Of Brera To Sleek Fashion Districts, Buzzing Cafés, And Cutting-Edge
+            Galleries, Italy's Design Capital Has Something For Every Traveler. Stroll Through Vibrant Neighborhoods,
+            Relax In Leafy Courtyards, Or Immerse Yourself In The City's Thriving Cultural And Fashion Scene – In Milan,
+            Every Corner Reflects A Blend Of History And Creativity.
+          </p>
         </div>
       </div>
     </section>
@@ -88,7 +94,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     padding: 40px 30px 30px;
     color: white;
   }
@@ -144,6 +150,32 @@
     object-fit: cover;
     border-radius: 5px;
     flex-shrink: 0;
+  }
+
+  @font-face {
+    font-family: "fira-sans";
+    src: url("/src/fonts/FiraSans-Regular.ttf");
+  }
+
+  p,
+  h3 {
+    font-family: fira-sans;
+    color: #2f2f2f;
+  }
+
+  @font-face {
+    font-family: "oswald";
+    src: url("/src/fonts/Oswald-Regular.ttf");
+  }
+
+  h1,
+  h2 {
+    font-family: oswald;
+  }
+
+  .news-tag,
+  .featured-tag {
+    font-family: fira-sans;
   }
 
   .news-content p {
@@ -238,6 +270,10 @@
 
     .sidebar {
       padding: 20px;
+    }
+    @font-face {
+      font-family: "fira-sans";
+      src: url("/src/fonts/FiraSans-Regular.ttf");
     }
   }
 </style>

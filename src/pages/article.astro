@@ -11,14 +11,14 @@ import grod from "../assets/IMG_0440.jpeg";
 <Layout>
   <div class="article-page">
     <div class="container">
-      <h1>CHEAP, TASTY AND LOCAL: <br /> 5 PLACES TO EAT IN COPENHAGEN</h1>
-       <img src="/public/images/article1.jpg" alt="Copenhagen dining" />
+      <h1 class="h-article">CHEAP, TASTY AND LOCAL: <br /> 5 PLACES TO EAT IN COPENHAGEN</h1>
+      <img src="/public/images/osters.jpeg" alt="Copenhagen dining" />
       <p>
         Eating well in Copenhagen doesn't have to be expensive. Here are five restaurants where atmosphere and flavor go
         hand in hand with student-friendly prices - plus our tips on how to get the most out of the experience.
       </p>
 
-      <h2>GOOD VIBES, GOOD BITES, LOW PRICE.</h2>
+      <h2 class="h-article">GOOD VIBES, GOOD BITES, LOW PRICE.</h2>
       <ArticleGrid1
         title="1. District Tonkin - Vietnamese streetfood vibes"
         address="Dronningens Tværgade"
@@ -43,8 +43,8 @@ import grod from "../assets/IMG_0440.jpeg";
       <ArticleGrid2
         title="4. Torvehallerne"
         address="Nørreport"
-        description="Et af byens mest kendte madmarkeder. Masser af små boder med alt fra smørrebrød til tacos - priser starter fra ca. 60 kr. Perfekt til at dele med en ven."
-        tip="Gå efter Hija de Sanchez for byens bedste tacos - og del flere småretter i stedet for én stor."
+        description="One of the city's most famous food markets, packed with small stalls offering everything from traditional Danish smørrebrød to tacos. Prices start at around 60 DKK - perfect for sharing with a friend."
+        tip="Head to Hija de Sanchez for Copenhagen's best tacos - and order several small dishes instead of just one big meal."
         image={torvehallerne.src}
       />
     </div>
@@ -63,15 +63,18 @@ import grod from "../assets/IMG_0440.jpeg";
     font-weight: bold;
     line-height: 1.2;
   }
-.container {
+  .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
   .article-page img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
     margin: 20px 0;
+  }
+  .h-article {
+    color: #d96c4a;
   }
 </style>

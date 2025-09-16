@@ -17,7 +17,6 @@ const { title, address, description, tip, image } = Astro.props;
     display: flex;
     gap: 1rem;
     align-items: flex-start;
-    background-color: #edece7;
     padding: 1rem;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -25,7 +24,8 @@ const { title, address, description, tip, image } = Astro.props;
 
   .place-image {
     width: 40%;
-    max-height: 400px;
+    max-height: 300px;
+    min-height: 300px;
     border-radius: 8px;
     object-fit: cover;
   }
